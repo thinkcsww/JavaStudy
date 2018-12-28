@@ -1,4 +1,8 @@
 package StepA;
 
 public class StepA1 {
+
+    public static void main(String args[]) {
+        System.out.println("hi");
+    }
 }
