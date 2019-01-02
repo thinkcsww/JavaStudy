@@ -2,7 +2,7 @@ package workbook.StepA;
 
 import java.util.Scanner;
 
-public class Average {
+class Average {
     private int kor;
     private int eng;
     private int math;
@@ -23,6 +23,8 @@ public class Average {
         System.out.print("수학 점수를 입력하세요 : ");
         math = s.nextInt();
     }
+
+
 
     private double getAverage() {
         total = kor + eng + math;
