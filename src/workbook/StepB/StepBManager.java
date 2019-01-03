@@ -15,6 +15,8 @@ public class StepBManager {
             printf("5. 날짜계산\n");
             printf("6. 점수계산\n");
             printf("7. 파일 용량 계산\n");
+            printf("8. 다양한 조건 판정\n");
+            printf("9. 비만 판정\n");
             printf("=>원하는 메뉴는?(0:exit) :");
             menu = s.nextInt();
             if(menu == 0) break;
@@ -46,6 +48,14 @@ public class StepBManager {
                 case 7:
                     StepB07 b07 = new StepB07();
                     b07.printResult();
+                    break;
+                case 8:
+                    StepB08 b08 = new StepB08();
+                    b08.printResult();
+                    break;
+                case 9:
+                    StepB09 b09 = new StepB09();
+                    b09.printResult();
                     break;
                 default:
                     break;
