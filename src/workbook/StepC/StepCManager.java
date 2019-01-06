@@ -16,7 +16,9 @@ public class StepCManager {
             printf("6. 점수계산\n");
             printf("7. 파일 용량 계산\n");
             printf("8. 다양한 조건 판정\n");
-            printf("9. 비만 판정\n");
+            printf("9. 소득세 계산\n");
+            printf("10. 간단한 사칙연산 계산\n");
+            printf("11. 윤년 판정하기\n");
             printf("=>원하는 메뉴는?(0:exit) :");
             menu = s.nextInt();
             if(menu == 0) break;
@@ -53,10 +55,18 @@ public class StepCManager {
                     StepC08 c08 = new StepC08();
                     c08.printResult();
                     break;
-//                case 9:
-//                    StepC09 c09 = new StepC09();
-//                    c09.printResult();
-//                    break;
+                case 9:
+                    StepC09 c09 = new StepC09();
+                    c09.printResult();
+                    break;
+                case 10:
+                    StepC10 c10 = new StepC10();
+                    c10.printResult();
+                    break;
+                case 11:
+                    StepC11 c11 = new StepC11();
+                    c11.printResult();
+                    break;
                 default:
                     printError();
                     break;
